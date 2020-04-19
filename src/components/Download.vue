@@ -6,7 +6,6 @@
 export default {
   mounted() {
     const appVersion = navigator.appVersion.toLowerCase();
-    console.log(appVersion);
     if (appVersion.includes("android")) {
       window.location =
         "https://play.google.com/store/apps/details?id=com.slips.android";
