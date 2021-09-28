@@ -4,6 +4,9 @@
       <div class=" w-full flex items-center justify-center">
         <img class=" logo w-1/2 mb-16" src="../assets/Logo.svg" alt="" />
       </div>
+      <div class=" w-full flex items-center justify-center">
+      <p class="mytext" >Slips is an in­no­va­ti­ve and uni­que so­cial network mobile app that al­lo­ws you to in­te­ract in real time with real people, wi­thin the real pla­ces around the city where you are.</p>
+      </div>
       <div class="btn rounded-full w-full flex items-center justify-center">
         <a
           target="blank"
