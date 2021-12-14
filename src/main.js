@@ -53,15 +53,7 @@ Vue.component("carousel-item", {
   methods: {
     centerSelf() {
 
-      const images = [
-        { src: "image_1.png", alt: 'One Shot Stories', description: 'People can see only once Your story' },
-        { src: "image_3.png", alt: 'ChitChat' , description: 'The ping pong chat, users can text you only once'},
-        { src: "image_2.png", alt: 'Places' , description: 'Discover what\'s happening in real time' },
-        { src: "image_4.png", alt: 'Chat' , description: 'Oustanding private chat with your friends' },
-        { src: "image_5.png", alt: 'Map' , description: 'Discover places around the world'},
-        { src: "image_6.png", alt: 'Filters' , description: 'Animated 3D masks and filters '},
-        { src: "image_7.png", alt: 'Most Active', description: 'Most active People on the app' },
-      ];
+      
       const currentindex = this.$parent.$children.indexOf(this);
       this.$parent.arrange(this.$parent.$children.indexOf(this));
       const element = document.getElementById("cardtitle");
@@ -85,6 +77,8 @@ export const fadeIn = (element, duration) => {
       }
   })();
 };
+
+
 
 export const fadeOut = (element, duration,text) => {
   if (element.style.opacity -0.1 <= 0){
@@ -194,7 +188,18 @@ const router = new VueRouter({
   routes
 })
 
+export const images = [
+  { src: "image_1.png", alt: 'One Shot Stories', description: 'People can see only once Your story' },
+  { src: "image_3.png", alt: 'ChitChat' , description: 'The ping pong chat, users can text you only once'},
+  { src: "image_2.png", alt: 'Places' , description: 'Discover what\'s happening in real time' },
+  { src: "image_4.png", alt: 'Chat' , description: 'Oustanding private chat with your friends' },
+  { src: "image_5.png", alt: 'Map' , description: 'Discover places around the world'},
+  { src: "image_6.png", alt: 'Filters' , description: 'Animated 3D masks and filters '},
+  { src: "image_7.png", alt: 'Most Active', description: 'Most active People on the app' },
+];
+
 new Vue({
   router,
+  data() {return images},
   render: h => h(App)
 }).$mount('#app')
