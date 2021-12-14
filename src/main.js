@@ -60,36 +60,39 @@ Vue.component("carousel-item", {
       const descrelement = document.getElementById("carddesctiption");
       const title = images[currentindex].alt
       const description = images[currentindex].description      
-      fadeOut(descrelement,400,description);
-      fadeOut(element,400,title.toUpperCase());
+      fade(descrelement,description);
+      fade(element,title.toUpperCase());
 
     }
   }
 });
 
-export const fadeIn = (element, duration) => {
-  (function increment(value = 0) {
-      element.style.opacity = String(value);
-      if (element.style.opacity !== '1') {
-          setTimeout(() => {
-              increment(value + 0.1);
-          }, duration / 10);
+function unfade(element) {
+  var op = 0.1;  // initial opacity
+  element.style.display = 'block';
+  var timer = setInterval(function () {
+      if (op >= 1){
+          clearInterval(timer);
       }
-  })();
-};
+      element.style.opacity = op;
+      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+      op += op * 0.1;
+  }, 10);
+}
 
-
-
-export const fadeOut = (element, duration,text) => {
-  if (element.style.opacity -0.1 <= 0){
-    element.innerHTML = text;
-    setTimeout(function() { fadeIn(element,400); }, 200);
-    
-  }else{
-    element.style.opacity =- 0.1;
-    setTimeout(function() { fadeOut(element,duration,text); }, duration/10);
-  }
-};
+function fade(element,text) {
+  var op = 1;  // initial opacity
+  var timer = setInterval(function () {
+      if (op <= 0.1){
+          clearInterval(timer);
+          element.innerHTML = text;
+          unfade(element);
+      }
+      element.style.opacity = op;
+      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+      op -= op * 0.1;
+  }, 10);
+}
 
 // Carousel component
 Vue.component("carousel", {
