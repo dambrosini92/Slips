@@ -69,9 +69,7 @@ export default {
 
 <style scoped>
 .layout {
-  background-color: #000;
-  background-repeat: repeat;
-  background-image: url("../assets/texture.png");
+  background-color: #fafafa;
 }
 
 /**linear-gradient(
