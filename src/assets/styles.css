@@ -114,6 +114,7 @@ html {
   align-items: center;
 }
 
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
