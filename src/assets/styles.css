@@ -35,18 +35,34 @@ html {
 
 }
 
+.descrtext{
+  margin-top: 8vh;
+  text-align:left;
+  color: #fff;
+  position: relative;
+  height: auto;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  font-size: 15pt;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .mytexttitle {
   text-align:left;
   color: #fff;
   position: relative;
   height: auto;
-  margin-top: 30vh;
+  margin-top: 10vh;
   margin-left: 3vw;
   margin-right: 3vw;
   font-size: 30pt;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 900;
+  line-height: 1;
+
 }
 
 .texturebackground{
@@ -115,7 +131,7 @@ html {
   .textcolumn{
     padding-top: 0px;
     overflow: hidden;
-    height: 30vh;
+    height: 40vh;
   }
 
   .mytexttitle {
