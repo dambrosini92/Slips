@@ -17,9 +17,9 @@ export default {
     };
   },
   computed: {
-    // image() {
-    //   return this.currentImage;
-    // },
+     image() {
+       return this.currentImage;
+     },
     style() {
       return {
         transition: "transform 0.5s, opacity 0.5s",
@@ -38,29 +38,17 @@ export default {
     },
   },
   methods: {
-    // unfade(element) {
-    //   let _op = 0.1; // initial opacity
-    //   element.style.display = "block";
-    //   let _timer = setInterval(function () {
-    //     if (op >= 1) {
-    //       clearInterval(_timer);
-    //     }
-    //     element.style.opacity = _op;
-    //     element.style.filter = "alpha(opacity=" + _op * 100 + ")";
-    //     _op += _op * 0.1;
-    //   }, 10);
-    // },
 
     fade(element, text) {
-      let op = 1; // initial opacity
+      let op = 1;
       let timer = setInterval(function () {
         if (op <= 0.1) {
           clearInterval(timer);
           element.innerHTML = text;
-          let _op = 0.1; // initial opacity
+          let _op = 0.1;
           element.style.display = "block";
           let _timer = setInterval(function () {
-            if (op >= 1) {
+            if (_op >= 1) {
               clearInterval(_timer);
             }
             element.style.opacity = _op;
@@ -75,7 +63,6 @@ export default {
     },
 
     centerSelf() {
-      //   const currentindex = this.$parent.$children.indexOf(this);
       this.$parent.arrange(this.$parent.$children.indexOf(this));
       const element = document.getElementById("cardtitle");
       const descrelement = document.getElementById("carddesctiption");
