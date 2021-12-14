@@ -16,15 +16,7 @@
             <div id="carddesctiption" class="mytext">
               People can see only once Your story
             </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="carouselbackground">
-            <Carousel />
-          </div>
-        </div>
-      </div>
-      <div class="btn rounded-full mydiv">
+            <div class="rounded-full mydiv">
         <a target="blank" class="m-3" href="mailto:info@slips.social">
           <img
             class="rounded-full shadow w-56"
@@ -33,7 +25,24 @@
           />
         </a>
       </div>
-      <div class="text-white text-xs myfooter mydiv">
+          </div>
+        </div>
+        <div class="column">
+          <div class="carouselbackground">
+            <Carousel />
+          </div>
+        </div>
+      </div>
+      <div class="btn rounded-full mydivmobile">
+        <a target="blank" class="m-3" href="mailto:info@slips.social">
+          <img
+            class="rounded-full shadow w-56"
+            src="../assets/EmailBtn.svg"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="text-white text-xs myfooter">
         <span class="px-2">
           Copyright © {{ new Date().getFullYear() }} Slips inc. All rights
           reserved.</span

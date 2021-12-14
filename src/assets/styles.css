@@ -86,6 +86,13 @@ html {
   text-align:center;
   color: #fff;
   margin-top: 30pt;
+  width: 100vw;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .column {
@@ -177,11 +184,25 @@ h1 {
 }
 
 .mydiv {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  visibility: visible;
+
+}
+
+.mydivmobile {
   width: 100vw;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 
 .carousel {
@@ -199,6 +220,15 @@ h1 {
   .textcolumn{
     width: 80vw;
   }
+
+  .mydiv {
+    visibility: hidden;
+  }
+
+  .mydivmobile {
+    visibility: visible;
+  }
+
 }
 
 .carousel > div {
@@ -4081,7 +4111,7 @@ video {
 }
 
 .h-screen {
-  height: 125vh;
+  height: 100vh;
 }
 
 @media screen and (max-width: 600px) {
