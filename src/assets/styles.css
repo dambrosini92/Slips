@@ -127,6 +127,13 @@ html {
     width: 100%;
   }
 
+  .myheader {
+    height: 60px;
+    width: 120px;
+    margin-top: 3vh;
+    margin-left: 3vw;
+  }
+
   .row {
     padding-top: 10vh;
     width: 100vw;
@@ -154,6 +161,15 @@ html {
     font-style: normal;
     font-weight: 900;
   }
+
+  .mytext{
+    font-size: 15pt;
+  }
+
+  .descrtext{
+    font-size: 15pt;
+  }
+
 }
 
 body {
