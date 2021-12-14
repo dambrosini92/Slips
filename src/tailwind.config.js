@@ -3,4 +3,5 @@ module.exports = {
     theme: {},
     variants: {},
     plugins: [],
+    runtimeCompiler: true,
   }

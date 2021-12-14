@@ -1,37 +1,28 @@
 <template>
-  <div class="layout fixed h-screen w-screen">
-    <div class="content container max-w-2xl min-">
-      <div class=" w-full flex items-center justify-center">
-        <img class=" logo w-1/2 mb-16" src="../assets/Logo.svg" alt="" />
+
+  <div class="layout h-screen w-screen" >
+    <div class="container">
+      <div class="myheader">
+        <img src="../assets/Logo.svg" alt="" />
       </div>
-      <div class=" w-full flex items-center justify-center">
-      <p class="mytext" >Slips is an in­no­va­ti­ve and uni­que so­cial network mobile app that al­lo­ws you to in­te­ract in real time with real people, wi­thin the real pla­ces around the city where you are.</p>
+      <div class="row">
+        <div class="column">
+          <div class="textcolumn">
+          <div id="cardtitle" class="mytexttitle">ONE SHOT</div>
+          <div id="carddesctiption" class="mytext">People can see only once Your story</div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="carouselbackground">
+            <carousel>
+              <div v-for="(image,i) in images"  v-bind:key="i">
+                  <img :src="require(`../assets/${image.src}`)" :alt="image.alt">
+              </div>
+            </carousel>
+          </div>
+        </div>
       </div>
-      <div class="btn rounded-full w-full flex items-center justify-center">
-        <a
-          target="blank"
-          class="m-3"
-          href="https://itunes.apple.com/app/id1463582248"
-        >
-          <img
-            class="rounded-full shadow w-56 "
-            src="../assets/IosBtn.svg"
-            alt=""
-        /></a>
-      </div>
-      <div class=" btn rounded-full w-full flex items-center justify-center">
-        <a
-          target="blank"
-          class="m-3"
-          href="https://play.google.com/store/apps/details?id=com.slips.android"
-        >
-          <img
-            class="rounded-full shadow w-56 "
-            src="../assets/AndroidBtn.svg"
-            alt=""
-        /></a>
-      </div>
-      <div class=" btn rounded-full w-full flex items-center justify-center">
+      <div class="btn rounded-full mydiv">
         <a target="blank" class="m-3" href="mailto:info@slips.social">
           <img
             class="rounded-full shadow w-56 "
@@ -40,13 +31,12 @@
           />
         </a>
       </div>
+      <div class="text-white text-xs myfooter mydiv">
+        <span class="px-2">
+          Copyright © {{ new Date().getFullYear() }} Slips inc. All rights reserved.</span>
+        </div>
     </div>
-    <div class="w-full text-white text-xs text-center footer fixed">
-      <span class="px-2">
-        Copyright © {{ new Date().getFullYear() }} Slips inc. All rights
-        reserved.</span
-      >
-    </div>
+    
   </div>
 </template>
 
@@ -54,6 +44,19 @@
 export default {
   name: "App",
   components: {},
+  data () {
+        return {
+            images: [
+              { src: "image_1.png", alt: 'One Shot', description: 'People can see only once Your story' },
+              { src: "image_3.png", alt: 'ChitChat' , description: 'The ping pong chat, users can text you only once'},
+              { src: "image_2.png", alt: 'Places' , description: 'Discover what\'s happening in real time' },
+              { src: "image_4.png", alt: 'Chat' , description: 'Oustanding private chat with your friends' },
+              { src: "image_5.png", alt: 'Map' , description: 'Discover places around the world'},
+              { src: "image_6.png", alt: 'Filters' , description: 'Animated 3D masks and filters '},
+              { src: "image_7.png", alt: 'Most Active', description: 'Most active People on the app' },
+            ]
+        }
+  }
 };
 </script>
 
@@ -61,7 +64,12 @@ export default {
 
 <style scoped>
 .layout {
-  background: linear-gradient(
+  background-color: #000; 
+  background-repeat: repeat;
+  background-image: url("../assets/texture.png");
+}
+
+/**linear-gradient(
     135deg,
     #e91d76,
     #cc1672 54%,
@@ -69,9 +77,8 @@ export default {
     #b6116e 71%,
     #ae0f6d 73%,
     #810466 84%,
-    #4a0142
-  );
-}
+    #4a0142 */
+
 .content {
   position: absolute;
   top: 45%;

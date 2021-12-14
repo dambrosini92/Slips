@@ -7,49 +7,209 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+ @font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap);
+}
 
 html {
   line-height: 1.15; /* 1 */
+  background-color: #000;
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 .mytext{
+  text-align:left;
+  color: #fff;
+  position: relative;
+  height: auto;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  font-size: 15pt;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+.mytexttitle {
+  text-align:left;
+  color: #fff;
+  position: relative;
+  height: auto;
+  margin-top: 30vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  font-size: 30pt;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.texturebackground{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mybackground{
+  background-color: #000;
+}
+
+.myheader {
+  height: 100px;
+  margin-top: 3vh;
+  margin-left: 3vw;
+  position: absolute;
+}
+
+.myfooter{
   text-align:center;
   color: #fff;
-  width: 60%;
-  padding-bottom: 30pt;
+  margin-top: 30pt;
+}
+
+.column {
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textcolumn{
+  overflow: hidden;
+  height: 80vh;
+  width: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 
-/* Sections
-   ========================================================================== */
+/* Clear floats after the columns */
+.row {
+  padding-top: 10vh;
+  width: 100vw;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+}
 
-/**
- * Remove the margin in all browsers.
- */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  .row {
+    padding-top: 10vh;
+    width: 100vw;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textcolumn{
+    padding-top: 0px;
+    overflow: hidden;
+    height: 30vh;
+  
+  }
+
+  .mytexttitle {
+    text-align:left;
+    color: #fff;
+    position: relative;
+    height: auto;
+    margin-top: 10vh;
+    font-size: 30pt;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+  }
+}
 
 body {
   margin: 0;
 }
 
-/**
- * Render the `main` element consistently in IE.
- */
-
 main {
   display: block;
 }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
 
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
+
+.carouselbackground{
+  overflow: hidden;
+  height: 80vh;
+  width: 50vh;
+  border-radius: 10px;
+  background-repeat: repeat;
+  background-color: #fafafa;
+  background-image: url("../assets/texture_light.png");
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.mydiv {
+  width: 100vw;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  background-color: #fafafa00;
+  height: 80vh;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  bottom: 0;
+  width: 50vh;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    width: 80vw;
+  }
+  .textcolumn{
+    width: 80vw;
+  }
+}
+
+.carousel > div {
+
+  background-color: #ffffff00;
+  color: #fff;
+  width: 30vh;
+  height: 50vh;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.dots {
+
+  position: absolute;
+  bottom: 0;
+  padding: 5%;
+  width: 100%;
+
+}
+
+.carouseltext {
+  color: #fff;
+}
 /* Grouping content
    ========================================================================== */
 
@@ -3906,7 +4066,17 @@ video {
 }
 
 .h-screen {
-  height: 100vh;
+  height: 125vh;
+}
+
+@media screen and (max-width: 600px) {
+  .h-screen {
+    height: 160vh;
+  }
+}
+
+.logowidth {
+  max-width: 10vh;
 }
 
 .leading-3 {
