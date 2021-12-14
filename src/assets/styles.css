@@ -124,6 +124,7 @@ html {
     color: #fff;
     position: relative;
     height: auto;
+    line-height: 1;
     margin-top: 10vh;
     font-size: 30pt;
     font-family: 'Poppins', sans-serif;
@@ -178,9 +179,7 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-  .carousel {
-    width: 80vw;
-  }
+  
   .textcolumn{
     width: 80vw;
   }
