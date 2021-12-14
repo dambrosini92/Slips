@@ -129,9 +129,9 @@ html {
 
   .myheader {
     height: 60px;
-    width: 80px;
+    width: 40px;
     margin-top: 3vh;
-    margin-left: 3vw;
+    margin-left: 6vw;
   }
 
   .row {
