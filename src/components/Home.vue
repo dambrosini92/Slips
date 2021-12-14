@@ -2,7 +2,7 @@
   <div class="layout h-screen w-screen">
     <div class="container">
       <div class="myheader">
-        <img src="../assets/Logo.svg" alt="" />
+        <img class="myimage" src="../assets/Logo.svg" alt="" />
       </div>
       <div class="row">
         <div class="column">
