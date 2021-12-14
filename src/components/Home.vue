@@ -8,6 +8,7 @@
       <div class="row">
         <div class="column">
           <div class="textcolumn">
+          <div class="mytext">Slips is an in­no­va­ti­ve so­cial app that al­lo­ws you to in­te­ract in real time with real people, wi­thin the real pla­ces around the city where you are.</div>
           <div id="cardtitle" class="mytexttitle">ONE SHOT</div>
           <div id="carddesctiption" class="mytext">People can see only once Your story</div>
           </div>

@@ -116,7 +116,6 @@ html {
     padding-top: 0px;
     overflow: hidden;
     height: 30vh;
-  
   }
 
   .mytexttitle {
@@ -125,7 +124,7 @@ html {
     position: relative;
     height: auto;
     line-height: 1;
-    margin-top: 10vh;
+    margin-top: 2vh;
     font-size: 30pt;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
