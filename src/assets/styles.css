@@ -26,6 +26,7 @@ html {
 }
 
 .mytext{
+
   text-align:left;
   color: #fff;
   position: relative;
@@ -39,7 +40,8 @@ html {
 
 }
 
-.descrtext{
+.descrtext {
+
   margin-top: 8vh;
   text-align:justify;
   color: #fff;
@@ -51,6 +53,7 @@ html {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
+  
 }
 
 .mytexttitle {
@@ -82,8 +85,6 @@ html {
 .instabutton{
   height: 40pt;
   width: 40pt;
-  background-color: #ffffff;
-  border-radius: 9999px;
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
@@ -95,8 +96,6 @@ html {
 .contactbutton{
   width: 180pt;
   height: 40pt;
-  background-color: #ffffff;
-  border-radius: 9999px;
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
@@ -265,9 +264,10 @@ h1 {
 }
 
 .mydivmobile {
-  width: 100vw;
+  width: 96vw;
   height: 50pt;
   display: grid;
+  padding: 0px;
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
@@ -297,10 +297,15 @@ h1 {
   
 }
 
+
 @media screen and (max-width: 800px) {
   
   .textcolumn{
     width: 80vw;
+  }
+
+  .carousel > div {
+    width: 60vw;
   }
 
   .mydiv {
@@ -318,8 +323,17 @@ h1 {
   }
 
   .instabutton{
-    margin-left: 2vw;
+    margin-left: 5vw;
+    width: 12vw;
+    height: 12vw;
   }
+
+  
+  .contactbutton{
+    height: 12vw;
+    width: 49vw;
+  }
+
 
 }
 
