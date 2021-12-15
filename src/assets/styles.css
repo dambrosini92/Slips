@@ -19,6 +19,8 @@ html {
   line-height: 1.15; /* 1 */
   background-color: #fafafa;
   -webkit-text-size-adjust: 100%; /* 2 */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .mytext{
