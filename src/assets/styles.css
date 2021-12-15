@@ -43,7 +43,7 @@ html {
   height: auto;
   margin-left: 3vw;
   margin-right: 3vw;
-  font-size: 15pt;
+  font-size: 14pt;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -75,6 +75,34 @@ html {
   background-color: #000;
 }
 
+.instabutton{
+  height: 40pt;
+  width: 40pt;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contactbutton{
+  width: 180pt;
+  height: 40pt;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instalogo{
+  width: 20pt;
+}
+
 .myheader {
   height: 100px;
   margin-top: 3vh;
@@ -85,8 +113,9 @@ html {
 .myfooter{
   text-align:center;
   color: #fff;
-  margin-top: 30pt;
+  margin-top: 10pt;
   width: 100vw;
+  height: 15vw;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
@@ -176,7 +205,7 @@ html {
   }
 
   .descrtext{
-    font-size: 15pt;
+    font-size: 14pt;
   }
 
 }
@@ -212,17 +241,18 @@ h1 {
   width: 100%;
   display: grid;
   grid-auto-flow: column;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 5vh;
   visibility: visible;
+  margin-left: 2vw;
+  
 
 }
 
 .mydivmobile {
   width: 100vw;
+  height: 50pt;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
@@ -269,6 +299,10 @@ h1 {
 
   .carouselbackground{ 
     width: 100%;
+  }
+
+  .instabutton{
+    margin-left: 2vw;
   }
 
 }
@@ -842,6 +876,7 @@ video {
 .container {
   width: 96vw;
   margin-top: 2vw;
+  margin-bottom: 2vw;
   margin-left: 2vw;
   border-radius: 15px;
   background-color: #000;
@@ -4131,7 +4166,7 @@ video {
 
 @media screen and (max-width: 800px) {
   .h-screen {
-    height: 160vh;
+    height: 165vh;
   }
 }
 

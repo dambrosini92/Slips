@@ -24,6 +24,13 @@
             alt=""
           />
         </a>
+         <a target="blank" class="instabutton" href="https://www.instagram.com/its.slips/">
+          <img
+            class="instalogo"
+            src="../assets/insta_logo.svg"
+            alt=""
+          />
+        </a>
       </div>
           </div>
         </div>
@@ -33,15 +40,23 @@
           </div>
         </div>
       </div>
-      <div class="btn rounded-full mydivmobile">
-        <a target="blank" class="m-3" href="mailto:info@slips.social">
+      <div class="mydivmobile">
+        <div target="blank" class="contactbutton" href="mailto:info@slips.social">
           <img
-            class="rounded-full shadow w-56"
+            class=""
             src="../assets/EmailBtn.svg"
             alt=""
           />
-        </a>
+        </div>
+        <div target="blank" class="instabutton" href="https://www.instagram.com/its.slips/">
+          <img
+            class="instalogo"
+            src="../assets/insta_logo.svg"
+            alt=""
+          />
+        </div>
       </div>
+      
       <div class="text-white text-xs myfooter">
         <span class="px-2">
           Copyright © {{ new Date().getFullYear() }} Slips inc. All rights
