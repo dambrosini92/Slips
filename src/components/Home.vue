@@ -50,7 +50,7 @@
         </div>
         <div target="blank" class="instabutton" href="https://www.instagram.com/its.slips/">
           <img
-            class="instalogo"
+            class=""
             src="../assets/insta_logo.svg"
             alt=""
           />
