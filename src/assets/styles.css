@@ -240,6 +240,19 @@ h1 {
   width: 100%;
 }
 
+.carousel > div {
+
+  background-color: #ffffff00;
+  color: #fff;
+  width: 30vh;
+  height: 50vh;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
 @media screen and (max-width: 800px) {
   
   .textcolumn{
@@ -254,20 +267,13 @@ h1 {
     visibility: visible;
   }
 
+  .carouselbackground{ 
+    width: 100%;
+  }
+
 }
 
-.carousel > div {
 
-  background-color: #ffffff00;
-  color: #fff;
-  width: 30vh;
-  height: 50vh;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-}
 .dots {
 
   position: absolute;
