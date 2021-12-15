@@ -1,5 +1,5 @@
 <template>
-  <div class="layout h-screen w-screen">
+  <div class="layout w-screen">
     <div class="container">
       <div class="myheader">
         <img class="myimage" src="../assets/Logo.svg" alt="" />
