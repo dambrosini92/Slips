@@ -167,6 +167,7 @@ html {
     justify-content: center;
     align-items: center;
     margin-left: 0px;
+    margin-bottom: 0px;
   }
 
   .myimage{
@@ -175,7 +176,7 @@ html {
   }
 
   .row {
-    padding-top: 10vh;
+    padding-top: 6vh;
     width: 96vw;
     display: grid;
     grid-auto-flow: row;
@@ -187,6 +188,8 @@ html {
     padding-top: 0px;
     overflow: hidden;
     height: auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   .mytexttitle {
@@ -195,7 +198,7 @@ html {
     position: relative;
     height: auto;
     line-height: 1;
-    margin-top: 2vh;
+    margin-top: 5vh;
     font-size: 30pt;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -302,6 +305,8 @@ h1 {
 
   .mydiv {
     visibility: hidden;
+    height: 0px;
+    margin-top: 0px;
   }
 
   .mydivmobile {

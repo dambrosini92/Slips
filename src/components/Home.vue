@@ -17,13 +17,13 @@
               People can see only once Your story
             </div>
             <div class="rounded-full mydiv">
-        <a target="blank" class="m-3" href="mailto:info@slips.social">
-          <img
-            class="rounded-full shadow w-56"
-            src="../assets/EmailBtn.svg"
-            alt=""
-          />
-        </a>
+                <a target="blank" class="m-3" href="mailto:info@slips.social">
+                <img
+                  class="rounded-full shadow w-56"
+                  src="../assets/EmailBtn.svg"
+                  alt=""
+                />
+                </a>
          <a target="blank" class="instabutton" href="https://www.instagram.com/its.slips/">
           <img
             class="instalogo"
