@@ -25,12 +25,12 @@ export default {
           description: "People can see only once Your story",
         },
         {
-          src: "image_3.png",
+          src: "image_2.png",
           alt: "ChitChat",
           description: "The ping pong chat, users can text you only once",
         },
         {
-          src: "image_2.png",
+          src: "image_3.png",
           alt: "Places",
           description: "Discover what's happening in real time",
         },
