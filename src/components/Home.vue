@@ -43,14 +43,14 @@
       <div class="mydivmobile">
         <div target="blank" class="contactbutton" href="mailto:info@slips.social">
           <img
-            class=""
+            class="myimage"
             src="../assets/EmailBtn.svg"
             alt=""
           />
         </div>
         <div target="blank" class="instabutton" href="https://www.instagram.com/its.slips/">
           <img
-            class=""
+            class="myimage"
             src="../assets/insta_logo.svg"
             alt=""
           />
