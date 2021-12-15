@@ -214,6 +214,8 @@ html {
 
 body {
   margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 main {
@@ -11782,7 +11784,6 @@ video {
 
 .w-screen {
   width: 100vw;
-  overflow-x: hidden;
 }
 
 .z-0 {
