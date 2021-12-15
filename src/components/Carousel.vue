@@ -93,7 +93,10 @@ export default {
 
         list.forEach((item, i) => {
           item.scale = 0.8 ** (i + 1);
-          const absolute = 105 * item.scale * 1.125 + parentTrans;
+          let absolute = 105 * item.scale * 1.125 + parentTrans;
+          if (window.innerWidth < 800){
+            absolute = 90 * item.scale * 1.125 + parentTrans;
+          }
           parentTrans = absolute; 
           item.xtrans = (listIndex == 0 ? -1 : 1) * absolute;
           item.opacity = Math.max(1 - 0.25 * (i / 2 + 1) ** 2, 0);

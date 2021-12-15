@@ -305,7 +305,8 @@ h1 {
   }
 
   .carousel > div {
-    width: 60vw;
+    width: 65vw;
+    top: 35%;
   }
 
   .mydiv {
