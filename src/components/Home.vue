@@ -24,13 +24,13 @@
                   alt=""
                 />
                 </a>
-         <a target="blank" class="instabutton" href="https://www.instagram.com/its.slips/">
-          <img
-            class="instalogo"
-            src="../assets/insta_logo.svg"
-            alt=""
-          />
-        </a>
+                <a target="blank" class=" btn instabutton" href="https://www.instagram.com/its.slips/">
+                  <img
+                    class="instalogo"
+                    src="../assets/insta_logo.svg"
+                    alt=""
+                  />
+                </a>
       </div>
           </div>
         </div>
@@ -41,20 +41,20 @@
         </div>
       </div>
       <div class="mydivmobile">
-        <div target="blank" class="contactbutton" href="mailto:info@slips.social">
+        <a target="blank" class="btn contactbutton" href="mailto:info@slips.social">
           <img
             class=""
             src="../assets/EmailBtn.svg"
             alt=""
           />
-        </div>
-        <div target="blank" class="instabutton" href="https://www.instagram.com/its.slips/">
+        </a>
+        <a target="blank" class="btn instabutton" href="https://www.instagram.com/its.slips/">
           <img
             class=""
             src="../assets/insta_logo.svg"
             alt=""
           />
-        </div>
+        </a>
       </div>
       
       <div class="text-white text-xs myfooter">
